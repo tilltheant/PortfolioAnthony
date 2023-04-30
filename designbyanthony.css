@@ -119,6 +119,44 @@ h3 {
   padding-top: 45px;
 }
 
+.projectwrapper {
+  background-color: #5A5349;
+}
+
+.projectwrapper p {
+  color: #FFD59B;
+  padding-bottom: 30px;
+}
+
+.projectwrapper h3 {
+  color: #FFD59B;
+  padding: 20px;
+}
+
+.project {
+  font-family: 'optima', serif;
+  font-weight: lighter;
+  padding: 20px 0 10 0;
+  font-size: 20px;
+  white-space: nowrap;
+}
+
+.projectwrapper div {
+  padding: 20px;
+}
+
+.projectwrapper video {
+  width: 100%;
+}
+
+.projectwrapper img {
+  width: 100%;
+}
+
+i {
+  color: #FFD59B;
+}
+
 body p {
   font-family: 'Helvetica', sans-serif;
   max-width: 400px;
@@ -214,6 +252,30 @@ footer a:nth-child(n+1):nth-child(n+2) {
     padding: 0 0 90 90;
   }
 
+  .projectwrapper div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20 20 20 0;
+  }
+
+  .projectwrapper img {
+    width: 60%;
+  }
+
+  .projectwrapper video {
+    width: 60%;
+    padding-top: 10%;
+  }
+
+  .projectwrapper div p {
+    padding: 20 20 20 0;
+  }
+
+  .project {
+    padding-right: 100%;
+  }
+
   main picture {
     padding-left: 10%;
   }
@@ -264,6 +326,11 @@ footer a:nth-child(n+1):nth-child(n+2) {
   section div p {
     font-size: 50px;
   }
+
+  .projectcomponent p {
+    align-self: center;
+  }
+
 
   footer {
     justify-content: flex-end;
