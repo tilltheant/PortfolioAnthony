@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Border Button with Particles</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .border-particles-button {
+            background-color: transparent;
+            border: 2px solid red; /* Red border */
+            font-size: 18px;
+            cursor: pointer;
+            position: relative;
+            color: #333;
+            overflow: hidden;
+        }
+
+        .border-particles-container {
+            position: relative;
+        }
+
+        .particle {
+            position: absolute;
+            width: 4px;
+            height: 4px;
+            background-color: red; /* Particle color */
+            border-radius: 50%;
+        }
+    </style>
+</head>
+<body>
+    <div class="border-particles-container" id="particles-container">
+        <button class="border-particles-button" id="myButton">Hover Me</button>
+    </div>
+
+    <script>
+        const button = document.getElementById('myButton');
+        const particlesContainer = document.getElementById('particles-container');
+
+        button.addEventListener('mouseenter', () => {
+            createBorderParticles();
+        });
+
+        function createBorderParticles() {
+            const numParticles = 100;
+            const buttonRect = button.getBoundingClientRect();
+
+            for (let i = 0; i < numParticles; i++) {
+                const particle = document.createElement('div');
+                particle.className = 'particle';
+
+                const angle = (i / numParticles) * 2 * Math.PI;
+                const x = buttonRect.left + buttonRect.width / 2 + Math.cos(angle) * buttonRect.width / 2;
+                const y = buttonRect.top + buttonRect.height / 2 + Math.sin(angle) * buttonRect.height / 2;
+
+                particle.style.left = `${x}px`;
+                particle.style.top = `${y}px`;
+
+                particlesContainer.appendChild(particle);
+            }
+        }
+    </script>
+</body>
+</html>

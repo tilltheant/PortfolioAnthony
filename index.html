@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
@@ -8,130 +9,116 @@
     <meta name="color-scheme" content="light only">
     <title>Portfolio Anthony de la fuente</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/logo.svg" />
-    <link rel="stylesheet" href="designbyanthony.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="cssmainpage.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="preconnect" href="https://fonts.gstatic.com">
 </head>
 
-<header>
-    <nav>
-        <div class="logo">
-            <img src="assets/logo.svg" alt="Anthony de la fuente logo">
-            <p>Anthony de la Fuente</p>
-        </div>
-        <ul>
-            <li>
-                <a href="https://instagram.com/ants_design_?igshid=ZDdkNTZiNTM=">
-                    <img src="assets/instalogoblack.png" alt="instagram link" class="icons">
-                </a>
-            </li>
-            <li>
-                <a href="https://www.linkedin.com/in/anthonyfuente/">
-                    <img src="assets/linkedinlogo.png" alt="linkedin link" class="icons">
-                </a>
-            </li>
-        </ul>
-    </nav>
-</header>
-
 <body>
+    <main id="particles-js">
+        <div class="wrapper" style="left: 45%;">
+                <section class="button-wrapper">
+                    <button id="projectsButton">Projects</button>
+                    <button id="aboutMeButton">About me</button>
+                </section>
+            <section id="projects" class="hidden">
+                <div class="projectcard">
+                    <h1>Doula coaching voor hoogzwangere vrouwen</h1>
+                    <div class="imagewrapper"><img src="assets/Doulaapp.jpg" alt="Picture of Doula with Datavisualization charts"></div>
+                        <div>
+                            <p class="tags">
+                                <span class="tag is-rounded is-success">UX design</span><span class="tag is-rounded is-link">Onderzoek</span><span class="tag is-rounded is-link">Best
+                                    practices</span><span class="tag is-rounded is-success">Datavisualization</span><span class="tag is-rounded is-link">Persona's</span><span class="tag is-rounded is-success">Components</span>
+                                <span class="tag is-rounded is-link">Job stories</span><span class="tag is-rounded is-info">Design patterns</span><span class="tag is-rounded is-info">Benchmark creation</span>
+                            </p>
+                        </div>
+                        <p>Tools: Figma, Illustrator en Text to image generation</p>
+                        <div>
+                            <p>Herontworpen UI die beter aansluit bij
+                                de doelgroep zwangere vrouwen van 18 t/m 35 jaar.
+                                2 nieuwe features toegevoegd waarbij gebruikers beter inzicht krijgen over
+                                hun welzijn doormiddel van verzamelen van data en omzetten in grafieken.
+                                Een digitaal visuele coach ontworpen die gebruikers
+                                door het proces van hun zwangerschap helpen en de
+                                ervaring van gebruikers persoonlijker maakt.</p>
+                        </div>
+                </div>
 
-    <main>
-        <picture>
-            <image src="assets/about-me.png" alt="Photo of Anthony de la Fuente"></image>
-        </picture>
-        <section>
-            <h1>
-                <span class="cursive"> Anthony de la Fuente</span> is a
-                recent graduate from HvA looking for a UX/UI junior position.
-                <br>
-                <br>
-                Currently working a sidejob behind the bar,
-                fairly recent starting to work on small animations for fun.
-            </h1>
-        </section>
+                <div class="projectcard">
+                        <h1>Queer location: Club RoXy</h1>
+                        <div class="imagewrapper"><img src="assets/roxy.jpg" alt=""></div>
+                        <div>
 
-        <section>
-            <div>
-                <h2> About me </h2>
-                <p> People who know me usually describe me as a spontaneous guy with lots
-                    of vibrant ideas and a laid back but engaging attitude. I shine best
-                    when given to chance to work in team with other creative
-                    minds where we can motivate eachother. </p>
-            </div>
+                            <p class="tags">
+                                <span class="tag is-rounded is-success">Interaction
+                                    design</span><span class="tag is-rounded is-success">Userflow</span><span class="tag is-rounded is-success">Madmapper</span><span class="tag is-rounded is-link">Stakeholders</span><span class="tag is-rounded is-info">Design
+                                    patterns</span>
+                                <span class="tag is-rounded is-link">Persona</span><span  class="tag is-rounded is-link">Interviews</span><span class="tag is-rounded is-link">Mindmapping</span><span class="tag is-rounded is-info">Storytelling</span>
+                            </p>
+                        </div>
+                        <p>Tools: Figma, Illustrator en Miro</p>
+                        <div>
+                            <p>Een interactieve ruimte ontworpen waar gebruikers club RoXy kunnen herbeleven.
+                                Projection mapping technieken gebruikt voor het projecteren van beelden op objecten.
+                                Geluiden en muziek gebruikt om een drukke ruimte na te maken en de ruimte inrichten
+                                waardoor gebruikers het gevoel krijgen in een drukke donkere club te zijn.
+                                Het doel van dit project is om vergeten LGBT+ locaties in Amsterdam een plek te geven. </p>
+                        </div>
+                </div>
+            </section>
 
-        </section>
+            <section id="aboutme" class="hidden">
+                <div class="aboutmewrapper">
+                    <div class="beschrijving">
+                        <h1>Anthony de la Fuente</h1>
+                        <p>
+                            
+                            
+                            Mensen die mij kennen, beschrijven mij meestal als een spontane kerel 
+                            met veel levendige ideeën en een relaxte maar boeiende houding. 
+                            Ik kom het beste tot mijn recht wanneer ik de kans krijg om samen 
+                            te werken in een team met andere creatieve geesten, 
+                            waar we elkaar kunnen motiveren. Maar ik ben ook in staat om zelfstandig goed te werken, 
+                            waarbij ik mijn eigen initiatief en doorzettingsvermogen kan tonen. <br><br>
+                        </p>
+                    </div>
+                    <div class="imageaboutme">
+                        <img src="assets/about-me.png" alt="Picture of Anthony">
+                    </div>
 
+                </div>
+                <div class="aboutmewrapper">
+                    <div>
+                        <p>Mijn hobbies</p>
+                        <ul>
+                            <li>Rolschaatsen</li>
+                            <li>Djing</li>
+                            <li>Gewichtheffen</li>
+                            <li>Fotografie</li>
+                            <li>Gamen</li>
+                            <li>Barista</li>
+                        </ul>
+                    </div>
+
+                    <div>
+                        <p>Mijn skillset</p>
+                        <ul>
+                            <li>Adobe Illustrator</li>
+                            <li>Figma</li>
+                            <li>Miro</li>
+                            <li>HTML/CSS</li>
+                            <li>JavaScript</li>
+                            <li>Adobe Photoshop</li>
+                            <li>Adobe After Effects</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+        </div>
     </main>
-
-    <section class="projectwrapper">
-            <h3> Projects </h3>
-
-            <img src="assets/Doulaapp.jpg" alt="">
-        <div class="projectcomponent">
-                <p class="project">Doula Coaching for pregnant woman</p>
-
-                <p> <i>Modernizing the UI and creating an new feature to track users their mood.</i> 
-                    <br>
-                    <br>
-                    Doula is an audio voice coach to help pregnant woman through their last 
-                    stages of pregnancy by assisting users when they experience contractions.
-                    <br>
-                    <br>
-                    Using methods such as benchmark creation, Persona's, 
-                    job stories and design pattern research to recreate Doula.
-                    </p>  
-        </div>
-
-            <img src="assets/roxy.jpg" alt="">
-        <div class="projectcomponent">
-                <p class="project">Queer locations</p>
-
-                <p> <i>An immersive installation creating a snapshot of one of the most 
-                    iconic clubs in Amsterdam her lifetime.</i> 
-                    <br>
-                    <br>
-                    Club RoXy presenting The loveball of 1991, this was one of the most interesting parties 
-                    because it was during a period where queer people got discriminated and reduced to a virus. 
-                    People would dance the night away as a form of protest against the stigma surrouding HIV.
-                    </p>  
-        </div>
-
-        <video controls src="assets/video_myosotis.mp4#t=0.5" poster="Promotional-video-myosotis" preload="metadata"></video>
-        <div class="projectcomponent">
-            <p class="project">Myosotis</p>
-
-            <p> <i>Creating a gadget to help elderly people fight against alzheimer 
-                by using soothing sounds, melodies and tracking the wellbeing of elderly. </i>
-                <br>
-                <br>
-                This is in the form of a vase with different flowers with 
-                each their own sensors depending on the needs of the patiënt</p>  
-    </div>
-    </section>
-
-    <footer>
-        <div class="footer-item">
-            <h4>Contact</h4>
-            <div class="footerlinks">
-                <a href="https://instagram.com/ants_design_?igshid=ZDdkNTZiNTM=">
-                    <img src="assets/instalogowhite.svg" alt="instagram link" class="icons">
-                </a>
-
-                <a href="mailto:anthonydelafuente28@gmail.com">
-                    <img src="assets/mailicon.png" alt="" class="icons">
-                </a>
-
-                <a href="https://www.linkedin.com/in/anthonyfuente/">
-                    <img src="assets/linkedinlogo.png" alt="linkedin link" class="icons">
-                </a>
-
-            </div>
-        </div>
-
-        <div>
-            <img src="assets/logoinverted.svg" alt="" class="ftlogo">
-        </div>
-    </footer>
-
+    <script src="Buttonanimate.js"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
 </body>
+</html>
