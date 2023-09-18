@@ -4,22 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta property="og:title" content="Anthony de la fuente's portfolio">
-    <meta property="og:url" content="https://ajfuente.com">
     <meta name="color-scheme" content="light only">
     <title>Portfolio Anthony de la fuente</title>
     <link rel="shortcut icon" type="image/jpg" href="assets/logo.svg" />
     <link rel="stylesheet" href="cssmainpage.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
 </head>
 
 <body>
     <main id="particles-js">
         <div class="wrapper" style="left: 45%;">
                 <section class="button-wrapper">
-                    <button id="projectsButton">Projects</button>
-                    <button id="aboutMeButton">About me</button>
+                    <button class="buttonmenu" id="projectsButton">Projects</button>
+                    <button class="buttonmenu" id="aboutMeButton">About me</button>
                 </section>
             <section id="projects" class="hidden">
                 <div class="projectcard">
@@ -42,13 +42,44 @@
                                 door het proces van hun zwangerschap helpen en de
                                 ervaring van gebruikers persoonlijker maakt.</p>
                         </div>
+                        <button id="openModalBtn1">Meer info</button>
+                        <div id="myModal1" class="modal">
+                            <div class="modal-content">
+                                <!-- Close button for Modal 1 -->
+                                <span class="close" id="closeModalBtn1"><i class="fas fa-times"></i></span>
+                        
+                                <section>
+                                    <h1>Doula</h1>
+                                    <div class="projectmoreinfo">
+                                        <figure class="projectimages"><img src="assets/Doula-introscreen.png" alt="Foto startscherm Doula">
+                                        <figcaption>Afbeelding 1.0</figcaption>
+                                        </figure>
+                                        <div>
+                                        <p class="titeldoula">Het ontwerpen van een persoonlijkere ervaring</p>
+                                        <p>
+                                            De app wordt gepersonaliseerd om zich specifiek te richten op zwangere vrouwen tussen 18 en 34 jaar oud.
+                                            Gebruikers van Doula hebben aangegeven dat ze een verbeterde connectie met de app wensen, betere ondersteuning 
+                                            verlangen, en een meer aangename persoonlijke ervaring willen hebben. <br><br>
+                                            Op basis van deze feedback is een persona 
+                                            gecreëerd op basis van verzamelde gegevens van gebruikers via Job Stories. <br><br>
+                                            Bij het eerste gebruik van de app krijgen gebruikers de mogelijkheid om een coach te kiezen, elk met een unieke coachingsstijl. 
+                                            Gebruikers hebben ook de optie om te selecteren welke achtergrond of cultuur hun coach heeft, om zo een gevoel van verbondenheid te creëren. 
+                                            Bovendien voorziet de coach de gebruikers van tips en complimenten tijdens het gebruik van de app om de effectiviteit ervan te vergroten.
+                                        </p>
+                                        </div>
+                                    </div>
+                                </section>
+                                <section></section>
+                                <section></section>
+                                <section></section>
+                            </div>
+                        </div>
                 </div>
 
                 <div class="projectcard">
                         <h1>Queer location: Club RoXy</h1>
                         <div class="imagewrapper"><img src="assets/roxy.jpg" alt=""></div>
                         <div>
-
                             <p class="tags">
                                 <span class="tag is-rounded is-success">Interaction
                                     design</span><span class="tag is-rounded is-success">Userflow</span><span class="tag is-rounded is-success">Madmapper</span><span class="tag is-rounded is-link">Stakeholders</span><span class="tag is-rounded is-info">Design
@@ -64,7 +95,20 @@
                                 waardoor gebruikers het gevoel krijgen in een drukke donkere club te zijn.
                                 Het doel van dit project is om vergeten LGBT+ locaties in Amsterdam een plek te geven. </p>
                         </div>
-                </div>
+                        <button id="openModalBtn2">Meer info</button>
+                        <div id="myModal2" class="modal">
+                            <div class="modal-content">
+                                <span class="close" id="closeModalBtn2"><i class="fas fa-times"></i></span>
+                                <!-- Your website content with sections -->
+                                <section>
+                                    <h1>Doula</h1>
+                                </section>
+                                <section></section>
+                                <section></section>
+                                <section></section>
+                                <p>This is Modal 2</p>
+                            </div>
+                        </div>
             </section>
 
             <section id="aboutme" class="hidden">
@@ -72,10 +116,8 @@
                     <div class="beschrijving">
                         <h1>Anthony de la Fuente</h1>
                         <p>
-                            
-                            
                             Mensen die mij kennen, beschrijven mij meestal als een spontane kerel 
-                            met veel levendige ideeën en een relaxte maar boeiende houding. 
+                            met veel levendige ideeën en een relaxte maar geinteresseerde houding. 
                             Ik kom het beste tot mijn recht wanneer ik de kans krijg om samen 
                             te werken in een team met andere creatieve geesten, 
                             waar we elkaar kunnen motiveren. Maar ik ben ook in staat om zelfstandig goed te werken, 

@@ -7,15 +7,12 @@ body {
   overflow: hidden;
   background-color: #161922;
   font-family: 'Roboto', sans-serif;
-  width: 100%;
-  height: 100%;
 }
 
 .wrapper {
   display: flex;
   flex-direction: row;
   position: absolute;
-  width: 100%;
   height: 100%;
   left: 0%;
 }
@@ -27,7 +24,7 @@ body {
   padding-left: 20px;
 }
 
-button {
+.buttonmenu {
   transition: transform 10s ease-in-out;
   border: none;
   padding: 15px 25px 15px 25px;
@@ -42,7 +39,6 @@ button {
   width: 400px;
   background-color: rgba(22, 25, 34, 0.7);
   margin-top: 15px;
-  padding: 15px;
 }
 
 h1 {
@@ -68,7 +64,6 @@ img {
 .imageaboutme {
   width: 400px;
   height: 450px;
-  padding: 20px;
 }
 
 .beschrijving p {
@@ -80,6 +75,18 @@ img {
   justify-content: space-evenly;
   color: white;
 }
+
+.projectimages {
+  width: 300px; /* Adjust the width of the container as needed */
+  height: 500px; /* Adjust the height of the container as needed */
+  object-fit: contain;
+  padding: 10px 10px 0px 10px;
+}
+
+figcaption {
+  padding-left: 50%;
+}
+
 
 #aboutme {
   justify-content: space-evenly;
@@ -104,9 +111,8 @@ img {
   opacity: 0;
   height: 0vh;
   width: 0vw;
-  transition: opacity 0.5s ease-in-out;
-  transition: height 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  transition: opacity 0.5s ease-out;
+  transition: width 0.5s ease-out;
 }
 
 .visible {
@@ -114,16 +120,79 @@ img {
   opacity: 1;
   height: 90vh;
   width: 90vw;
-  transition: display 0.5s ease-in;
-  transition: opacity 0.5s ease-in-out;
-  transition: height 0.5s ease-in-out;
-  transition: width 0.5s ease-in-out;
+  transition: width 0.5s ease-out;
+  transition: opacity 0.5s ease-out;
 }
 
 main {
   height: 100vh;
   width: 100%;
 }
+
+
+/* CSS for the modal */
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+}
+
+.modal-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100vh;
+  height: 100vh;
+  transform: translate(-50%, -50%);
+  background-color: white;
+  color: #3c3c3c;
+  border-radius: 10px;
+  overflow-x: scroll;
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.projectmoreinfo {
+  display: flex;
+  align-self: center;
+}
+
+.projectmoreinfo p {
+ width: 400px;
+}
+
+.titeldoula {
+  font-size: 2em;
+}
+
+.modal-content h1 {
+  font-size: 3em;
+}
+
+.modal-content section {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+/* Close button style */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  cursor: pointer;
+  color: #0a0a0a;
+}
+
+
+
 
 /* TAG SYSTEM */
 
