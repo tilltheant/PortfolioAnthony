@@ -169,6 +169,29 @@ main {
   font-size: 2em;
 }
 
+.subtiteldoula {
+  font-size: 1.5em;
+}
+
+.kleurenpalet {
+  display: flex;
+  justify-content: space-between;
+}
+
+.kleur {
+  width: 100px;
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+  font-weight: bold;
+  color: white;
+}
+
+#kleur1 { background-color: #FF7859; }
+#kleur2 { background-color: #FAFAFA; color:#161922; }
+#kleur3 { background-color: #FBC5B9; color:#161922; }
+#kleur4 { background-color: #3C3C3C; }
+
 .modal-content h1 {
   font-size: 3em;
 }
