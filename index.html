@@ -16,12 +16,8 @@
 
 <body>
     <main id="particles-js">
-        <div class="wrapper" style="left: 45%;">
-                <section class="button-wrapper">
-                    <button class="buttonmenu" id="projectsButton">Projecten</button>
-                    <button class="buttonmenu" id="aboutMeButton">Over mij</button>
-                </section>
-            <section id="projects" class="hidden">
+        <div class="wrapper" >
+            <section id="projects">
                 <div class="projectcard">
                     <h1>Doula coaching voor hoogzwangere vrouwen</h1>
                     <div class="imagewrapper"><img src="assets/Doulaapp.jpg" alt="Picture of Doula with Datavisualization charts"></div>
@@ -42,7 +38,7 @@
                                 door het proces van hun zwangerschap helpen en de
                                 ervaring van gebruikers persoonlijker maakt.</p>
                         </div>
-                        <button id="openModalBtn1">Meer info</button>
+                        <button class="openbutton" id="openModalBtn1">Meer info</button>
                         <div id="myModal1" class="modal">
                             <div class="modal-content">
                                 <!-- Close button for Modal 1 -->
@@ -93,24 +89,31 @@
 
                                     </div>
                                 </section>
+
                                 <section>
                                     <div class="projectmoreinfo">
+                                        </figure>
                                         <div>
-                                        <p class="subtiteldoula">Het implementeren van een symptoomtracker in de app.</p>
-                                        <p>
-                                            Binnen de app hebben is een functie toegevoegd waarmee gebruikers 
-                                            hun dagelijkse symptomen kunnen bijhouden. Door hun stemming voor 
-                                            de betreffende dag in te voeren, kunnen gebruikers eenvoudig hun 
-                                            welzijn volgen.
-                                        </p>
+                                            <p class="subtiteldoula">Het implementeren van een tracker in de app.</p>
+                                            <p>
+                                                Door gebruik te maken van een agenda krijgen gebruikers iedere maand 
+                                                inzichten over hun welzijn <br><br>
+                                                Binnen de app is een functie toegevoegd waarmee gebruikers 
+                                                hun dagelijkse symptomen kunnen bijhouden. Door hun stemming voor 
+                                                de betreffende dag in te voeren, kunnen gebruikers eenvoudig hun 
+                                                welzijn volgen. 
+                                            </p>
+                                        </div>
+                                        <figure class="projectimages"><img src="assets/symptomtracker.png" alt="">
+                                            <figcaption>Afbeelding 3</figcaption>
+                                        
                                     </div>
-                                    </div>
+                                    <a href="index.html" class="button-link">Terug</a>
                                 </section>
-                                
                             </div>
                         </div>
                 </div>
-
+            <section>
                 <div class="projectcard">
                         <h1>Queer location: Club RoXy</h1>
                         <div class="imagewrapper"><img src="assets/roxy.jpg" alt=""></div>
@@ -130,68 +133,26 @@
                                 waardoor gebruikers het gevoel krijgen in een drukke donkere club te zijn.
                                 Het doel van dit project is om vergeten LGBT+ locaties in Amsterdam een plek te geven. </p>
                         </div>
-                        <button id="openModalBtn2">Meer info</button>
+                        <button class="openbutton" id="openModalBtn2">Meer info</button>
                         <div id="myModal2" class="modal">
                             <div class="modal-content">
                                 <span class="close" id="closeModalBtn2"><i class="fas fa-times"></i></span>
                                 <!-- Your website content with sections -->
                                 <section>
-                                    <h1>Doula</h1>
+                                    <h1>Club RoXy experience</h1>
+                                </section>
+                                <section>
+
+
                                 </section>
                                 <section></section>
                                 <section></section>
-                                <section></section>
-                                <p>This is Modal 2</p>
+                                
                             </div>
                         </div>
+                    
+                </div>   
             </section>
-
-            <section id="aboutme" class="hidden">
-                <div class="aboutmewrapper">
-                    <div class="beschrijving">
-                        <h1>Anthony de la Fuente</h1>
-                        <p>
-                            Mensen die mij kennen, beschrijven mij meestal als een spontane kerel 
-                            met veel levendige ideeën en een relaxte maar geinteresseerde houding. 
-                            Ik kom het beste tot mijn recht wanneer ik de kans krijg om samen 
-                            te werken in een team met andere creatieve geesten, 
-                            waar we elkaar kunnen motiveren. Maar ik ben ook in staat om zelfstandig goed te werken, 
-                            waarbij ik mijn eigen initiatief en doorzettingsvermogen kan tonen. <br><br>
-                        </p>
-                    </div>
-                    <div class="imageaboutme">
-                        <img src="assets/about-me.png" alt="Picture of Anthony">
-                    </div>
-
-                </div>
-                <div class="aboutmewrapper">
-                    <div>
-                        <p>Mijn hobbies</p>
-                        <ul>
-                            <li>Rolschaatsen</li>
-                            <li>Djing</li>
-                            <li>Gewichtheffen</li>
-                            <li>Fotografie</li>
-                            <li>Gamen</li>
-                            <li>Barista</li>
-                        </ul>
-                    </div>
-
-                    <div>
-                        <p>Mijn skillset</p>
-                        <ul>
-                            <li>Adobe Illustrator</li>
-                            <li>Figma</li>
-                            <li>Miro</li>
-                            <li>HTML/CSS</li>
-                            <li>JavaScript</li>
-                            <li>Adobe Photoshop</li>
-                            <li>Adobe After Effects</li>
-                        </ul>
-                    </div>
-                </div>
-            </section>
-
         </div>
     </main>
     <script src="Buttonanimate.js"></script>

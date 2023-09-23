@@ -9,36 +9,25 @@ body {
   font-family: 'Roboto', sans-serif;
 }
 
+main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
 .wrapper {
   display: flex;
-  flex-direction: row;
-  position: absolute;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   height: 100%;
-  left: 0%;
-}
-
-.button-wrapper {
-  display: flex;
-  align-self: center;
-  flex-direction: column;
-  padding-left: 20px;
-}
-
-.buttonmenu {
-  transition: transform 10s ease-in-out;
-  border: none;
-  padding: 15px 25px 15px 25px;
-  white-space: nowrap;
-  margin: 10px;
-  border-radius: 5px;
-  background-color: #6FFFE9;
-  color: #161922;
+  position: absolute; 
 }
 
 .projectcard {
   width: 400px;
   background-color: rgba(22, 25, 34, 0.7);
-  margin-top: 15px;
+  padding: 20px;
 }
 
 h1 {
@@ -61,76 +50,56 @@ img {
   object-fit: cover;
 }
 
-.imageaboutme {
-  width: 400px;
-  height: 450px;
-}
-
-.beschrijving p {
-  width: 400px;
-  padding: 10px;
-}
 
 #projects {
+  display: flex;
+  padding: 10px;
   justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
   color: white;
 }
 
 .projectimages {
-  width: 300px; /* Adjust the width of the container as needed */
-  height: 500px; /* Adjust the height of the container as needed */
+  width: 300px; 
+  height: 500px; 
   object-fit: contain;
   padding: 10px 10px 0px 10px;
 }
+
 
 figcaption {
   padding-left: 50%;
 }
 
-
-#aboutme {
-  justify-content: space-evenly;
-  flex-direction: column;
-  align-items: center;
-  color: white;
-  padding-top: 20px;
-  background-color: rgba(22, 25, 34, 0.7 );
-}
-
-.aboutmewrapper {
-  display: flex;
-  padding: 10px;
-}
-
-.aboutmewrapper div{
-  padding: 15px;
-}
-
-/* CSS styles for the hidden and visible elements */
-.hidden {
-  opacity: 0;
-  height: 0vh;
-  width: 0vw;
-  transition: opacity 0.5s ease-out;
-  transition: width 0.5s ease-out;
-}
-
-.visible {
-  display: flex;
-  opacity: 1;
-  height: 90vh;
-  width: 90vw;
-  transition: width 0.5s ease-out;
-  transition: opacity 0.5s ease-out;
-}
-
-main {
-  height: 100vh;
-  width: 100%;
-}
-
-
 /* CSS for the modal */
+
+
+.openbutton {
+  width: 120px;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #6fffe9;
+  border-style: none;
+  color: #161922;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+}
+
+button:hover {
+  background-color: #161922;
+  color: #6fffe9;
+  border-style: outset;
+  border-color: #6fffe9;
+  transition: 0.4s;
+  -webkit-transition: 0.4s;
+  -moz-transition: 0.4s;
+  -ms-transition: 0.4s;
+  -o-transition: 0.4s;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -139,6 +108,11 @@ main {
   width: 100%;
   height: 100%;
   background-color: white;
+  transition: 0.4 ease-out;
+  -webkit-transition: 0.4 ease-out;
+  -moz-transition: 0.4 ease-out;
+  -ms-transition: 0.4 ease-out;
+  -o-transition: 0.4 ease-out;
 }
 
 .modal-content {
@@ -152,13 +126,19 @@ main {
   color: #3c3c3c;
   border-radius: 10px;
   overflow-x: scroll;
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+  -ms-overflow-style: none;  
+  scrollbar-width: none; 
+  transition: 0.4 ease-out;
 }
 
 .projectmoreinfo {
   display: flex;
   align-self: center;
+  padding: 20px 20px 40px 20px;
+}
+
+section {
+  padding-bottom: 10px;
 }
 
 .projectmoreinfo p {
@@ -205,7 +185,7 @@ main {
 .modal-content::-webkit-scrollbar {
   display: none;
 }
-/* Close button style */
+
 .close {
   position: absolute;
   top: 10px;
@@ -214,10 +194,49 @@ main {
   color: #0a0a0a;
 }
 
+a {
+  width: 120px;
+  height: 35px;
+  border-radius: 2px;
+  background-color: #6fffe9;
+  border-style: none;
+  color: #161922;
+  text-align: center;
+  text-decoration: none;
+  line-height: 35px;
+}
 
 
+@media (max-width: 900px) {
+  #projects {
+    flex-direction: column;
+    overflow: scroll;
+    justify-content: unset;
+  
+  }
+  
+  .projectmoreinfo {
+    flex-direction: column-reverse;
+  }
 
-/* TAG SYSTEM */
+  .close {
+    display: hidden;
+  }
+}
+
+@media (max-width: 400px) {
+  .projectcard {
+    width: 300px;
+  }
+  
+  .imagewrapper {
+    width: 300px;
+  }
+  
+}
+
+
+/* tag systeem */
 
 .tags {
   align-items: center;
