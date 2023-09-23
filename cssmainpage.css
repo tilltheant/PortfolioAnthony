@@ -133,6 +133,7 @@ button:hover {
 
 .projectmoreinfo {
   display: flex;
+  align-items: center;
   align-self: center;
   padding: 20px 20px 40px 20px;
 }
@@ -217,10 +218,19 @@ a {
   
   .projectmoreinfo {
     flex-direction: column-reverse;
+    width: 300px;
+  }
+
+  .projectmoreinfo p {
+    width: auto;
   }
 
   .close {
     display: hidden;
+  }
+
+  .kleurenpalet {
+    flex-direction: column-reverse;
   }
 }
 
