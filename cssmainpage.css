@@ -13,7 +13,31 @@ main {
   position: absolute;
   width: 100%;
   height: 100%;
+  overflow: scroll;
 }
+
+/* Hide scrollbar for most modern browsers */
+main {
+  scrollbar-width: thin;
+  /* Firefox */
+  scrollbar-color: transparent transparent;
+  /* Firefox */
+
+  /* For WebKit-based browsers (Chrome, Safari, etc.) */
+  -webkit-scrollbar-width: thin;
+  -webkit-scrollbar-color: transparent transparent;
+}
+
+main::-webkit-scrollbar {
+  width: 0.1em;
+  /* Width of the scrollbar track */
+}
+
+main::-webkit-scrollbar-thumb {
+  background-color: transparent;
+  /* Color of the thumb */
+}
+
 
 .wrapper {
   display: flex;
@@ -21,7 +45,7 @@ main {
   align-items: center;
   width: 100%;
   height: 100%;
-  position: absolute; 
+  position: absolute;
 }
 
 .projectcard {
@@ -38,8 +62,10 @@ h1 {
 }
 
 .imagewrapper {
-  width: 400px; /* Adjust the width of the container as needed */
-  height: 300px; /* Adjust the height of the container as needed */
+  width: 400px;
+  /* Adjust the width of the container as needed */
+  height: 300px;
+  /* Adjust the height of the container as needed */
   overflow: hidden;
 }
 
@@ -61,8 +87,8 @@ img {
 }
 
 .projectimages {
-  width: 300px; 
-  height: 500px; 
+  width: 300px;
+  height: 500px;
   object-fit: contain;
   padding: 10px 10px 0px 10px;
 }
@@ -126,8 +152,8 @@ button:hover {
   color: #3c3c3c;
   border-radius: 10px;
   overflow-x: scroll;
-  -ms-overflow-style: none;  
-  scrollbar-width: none; 
+  -ms-overflow-style: none;
+  scrollbar-width: none;
   transition: 0.4 ease-out;
 }
 
@@ -138,12 +164,16 @@ button:hover {
   padding: 20px 20px 40px 20px;
 }
 
-section {
-  padding-bottom: 10px;
+.modal-content section:last-child {
+  padding-bottom: 100px;
 }
 
 .projectmoreinfo p {
- width: 400px;
+  width: 400px;
+}
+
+strong {
+  font-style: italic;
 }
 
 .titeldoula {
@@ -168,10 +198,23 @@ section {
   color: white;
 }
 
-#kleur1 { background-color: #FF7859; }
-#kleur2 { background-color: #FAFAFA; color:#161922; }
-#kleur3 { background-color: #FBC5B9; color:#161922; }
-#kleur4 { background-color: #3C3C3C; }
+#kleur1 {
+  background-color: #FF7859;
+}
+
+#kleur2 {
+  background-color: #FAFAFA;
+  color: #161922;
+}
+
+#kleur3 {
+  background-color: #FBC5B9;
+  color: #161922;
+}
+
+#kleur4 {
+  background-color: #3C3C3C;
+}
 
 .modal-content h1 {
   font-size: 3em;
@@ -185,6 +228,11 @@ section {
 
 .modal-content::-webkit-scrollbar {
   display: none;
+}
+
+.fotogallerij {
+  padding-bottom: 50px;
+
 }
 
 .close {
@@ -208,14 +256,14 @@ a {
 }
 
 
+
 @media (max-width: 900px) {
   #projects {
     flex-direction: column;
     overflow: scroll;
     justify-content: unset;
-  
   }
-  
+
   .projectmoreinfo {
     flex-direction: column-reverse;
     width: 300px;
@@ -232,18 +280,44 @@ a {
   .kleurenpalet {
     flex-direction: column-reverse;
   }
+
+  #projects {
+    padding: 0px;
+  }
+
+  .projectcard {
+    padding: 0px;
+  }
+
 }
 
 @media (max-width: 400px) {
   .projectcard {
+    width: 350px;
+  }
+
+  .imagewrapper {
+    width: 350px;
+  }
+
+  h1 {
+    height: 100px;
+  }
+}
+
+
+@media (max-width: 320px) {
+  .projectcard {
     width: 300px;
   }
-  
+
   .imagewrapper {
     width: 300px;
   }
-  
+
 }
+
+
 
 
 /* tag systeem */
@@ -449,7 +523,8 @@ a {
   width: 2em;
 }
 
-.tag:not(body).is-delete::before, .tag:not(body).is-delete::after {
+.tag:not(body).is-delete::before,
+.tag:not(body).is-delete::after {
   background-color: currentColor;
   content: "";
   display: block;
@@ -470,7 +545,8 @@ a {
   width: 1px;
 }
 
-.tag:not(body).is-delete:hover, .tag:not(body).is-delete:focus {
+.tag:not(body).is-delete:hover,
+.tag:not(body).is-delete:focus {
   background-color: #e8e8e8;
 }
 
